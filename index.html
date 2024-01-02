@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuitansi Cetak</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item">
+        <div class="form-header">
+          <h1>Kuitansi Cetak</h1>
+        </div>
+        <hr />
+        <div class="form-box">
+          <div class="form-item">
+            <label for="">Nama</label>
+            <input id="Nama" type="text" placeholder="Masukan nama anda" />
+          </div>
+          <div class="form-item">
+            <label for="">Barang</label>
+            <input id="Barang" type="text" placeholder="Nama barang" />
+          </div>
+          <div class="form-item">
+            <label for="">Harga</label>
+            <input id="Harga" type="text" placeholder="Harga barang" />
+          </div>
+          <div class="form-item">
+            <button id="btnSubmit">Submit</button>
+          </div>
+          <hr />
+          <div class="carts-box">
+            <div class="carts-header">
+              <h3>Carts</h3>
+              <span id="namaCarts"></span>
+            </div>
+            <div class="carts-table">
+              <table border="1" cellspacing="0">
+                <thead>
+                  <th>Id</th>
+                  <th>Nama</th>
+                  <th>Harga</th>
+                </thead>
+                <tbody id="tbody">
+                  <!-- <tr>
+                    <td>1</td>
+                    <td>Laptop</td>
+                    <td>Rp. 1000</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="submit-print">
+            <button id="btnPrint">Cetak</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
